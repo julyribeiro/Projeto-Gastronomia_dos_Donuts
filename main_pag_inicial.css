@@ -104,6 +104,8 @@
   justify-content: space-around;
   margin: 0%;
   background-color: #ead1dc;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -149,6 +151,8 @@
   color: #a64d79;
   margin: 2% 0 3% 0%;
   background-color: #ead1dc;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
 /* Estilizando a descrição de cada dia na programação */

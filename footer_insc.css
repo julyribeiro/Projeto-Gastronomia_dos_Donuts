@@ -22,8 +22,13 @@ footer div {
   text-align: center;
   font-family: "Playwrite GB S", cursive, sans-serif;
   color: #fff;
-  font-size: 11px;
-  padding-top: 1.5%;
+  font-size: 12px;
+  padding-top: 1%;
+}
+
+/* Adicionando margem a imagem descodificadas e ao copyrigth */
+.img_descodificadas{
+  padding-top: 0.3%;
 }
 
 #copyright{
