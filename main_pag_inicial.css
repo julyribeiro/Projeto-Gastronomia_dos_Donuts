@@ -102,7 +102,6 @@
 .img_donuts {
   display: flex;
   justify-content: space-around;
-  margin: 0%;
   background-color: #ead1dc;
   padding-right: 10%;
   padding-left: 10%;

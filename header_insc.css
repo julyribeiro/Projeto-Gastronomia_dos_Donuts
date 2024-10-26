@@ -18,6 +18,7 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Definindo cor de fundo do body */
@@ -36,9 +37,9 @@ body {
 header {
   background-color: #250315;
   color: #fff;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  display: flex;
   margin-bottom: 0px;
   padding: 0;
 }
@@ -74,7 +75,7 @@ nav a {
   border: none;
   font-size: 16px;
   font-style: normal;
-  font-family: "Amatic", sans-serif;
+  margin-right: 15px;
 }
 
 /* Estilizando o hover dos itens de lista */
@@ -91,10 +92,10 @@ li {
 
 /* Estilizando os botões de navegação */
 .botao_nav {
-  font-family: "Roboto", sans-serif;
   font-size: 13px;
   text-align: center;
 }
+
 
 /* --------------------------------------------------------------------------
 ~ OBSERVAÇÃO: AS FOLHAS DE ESTILO ESTÃO EM ARQUIVOS DIFERENTES, SENDO ELES: -
