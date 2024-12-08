@@ -20,10 +20,14 @@ footer div {
   flex-direction: column;
   background-color: #250315;
   text-align: center;
-  font-family: "Playwrite GB S", cursive, sans-serif;
+
   color: #fff;
   font-size: 12px;
   padding-top: 1%;
+}
+
+.by {
+  font-family: "Playwrite GB S", cursive, sans-serif;
 }
 
 /* Adicionando margem a imagem descodificadas e ao copyrigth */
