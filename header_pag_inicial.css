@@ -17,7 +17,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 /* Definindo cor de fundo do body */
@@ -32,68 +31,104 @@ body {
   padding-left: 5px;
 }
 
-/* Estilizando para o header */
+/* Estilizando o header */
 header {
   background-color: #250315;
   color: #fff;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  display: flex;
-  margin-bottom: 0px;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
-/* Removendo estilo de lista dos ul do menu de navegação*/
+/* Estilizando o menu de navegação, removendo estilo de lista */
 nav ul {
-  list-style: none;
+  list-style-type: none;
 }
 
-/* Definindo display flex para ul do nav */
+/* Configurando display flex para alinhamento dos itens do menu */
 ul {
   display: flex;
   align-items: center;
 }
 
-/* Estilizando os itens de lista dentro do nav */
+/* Estilizando os itens da lista no menu */
 nav li {
-  display: inline-block;
+  display: inline;
+  position: relative;
   margin-left: 20px;
 }
 
-/* Estilizando todos os li do nav */
-li {
-  text-align: -webkit-match-parent;
-  unicode-bidi: isolate;
-}
-
-/* Estilizando os links de navegação */
+/* Estilo geral para todos os links de navegação */
 nav a {
+  display: inline-block;
   background-color: transparent;
   color: #fff; 
   text-decoration: none; 
   border: none; 
   font-size: 16px; 
-  font-style: normal; 
-  font-family: "Amatic", sans-serif;
 }
 
-/* Estilizando o hover dos itens de lista */
-li:hover {
-  opacity: 0.6;
+/* Estilizando o hover nos itens do menu */
+.sem_insc:hover {
+  border-bottom: 2px solid rgb(230, 137, 186);
+  padding: 0;
+  margin: auto;
 }
 
-/* Ajuste da margem e padding para header e li dos botões de nav*/
+/* Ajuste da margem e padding para o header e li dos botões de navegação */
 header,
 li {
   margin-top: 0;
   padding-right: 8px;
 }
 
-/* Estilizando os botões de navegação */
+/* Estilizando botões de navegação */
 .botao_nav {
   font-family: "Roboto", sans-serif;
   font-size: 13px;
   text-align: center;
+}
+
+/* Ajuste de padding para o botão de inscrição */
+#inscricao_menu {
+  padding-right: 30px;
+}
+
+/* Cor de hover para o botão de inscrição */
+nav ul li #inscricao_menu:hover {
+  color: #fff;
+}
+
+/*-----------------------*/
+/* SUB MENU (DROPDOWN)   */
+/*-----------------------*/
+
+/* Estilizando submenu (inicialmente oculto) */
+nav ul ul {
+  display: none;           /* Oculta o submenu */
+  margin: 0;
+  padding: 0;
+  left: 0;
+  position: absolute;
+  top: 100%;               /* Alinha o submenu logo abaixo do item Inscrição */
+}
+
+/* Exibe o submenu ao passar o mouse sobre o item Inscrição */
+nav ul li:hover ul {
+  display: block;
+}
+
+/* Estilo para links do submenu */
+nav ul ul li a {
+  display: block;
+  background-color: rgb(230, 137, 186);
+  color: #fff;
+  padding: 0px;
+  font-size: 13px;
+  text-align: center;
+  margin: 0;
 }
 
 /* --------------------------------------------------------------------------

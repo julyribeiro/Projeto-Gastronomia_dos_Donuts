@@ -44,15 +44,11 @@ header {
   padding: 0;
 }
 
-/* Removendo estilo de lista dos ul do menu de navegação*/
+/* Definindo display flex para ul do nav e Removendo estilo de lista dos ul do menu de navegação*/
 nav ul {
-  list-style: none;
-}
-
-/* Definindo display flex para ul do nav */
-ul {
   display: flex;
   align-items: center;
+  list-style-type: none;
 }
 
 /* Estilizando os itens de lista dentro do nav */
