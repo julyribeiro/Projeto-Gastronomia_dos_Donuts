@@ -8,6 +8,7 @@
     <meta name="keywords" content="donuts, gastronomia, evento, workshops, palestras" />
     <meta name="author" content="July Ribeiro">
     <meta name="robots" content="index, follow">
+    <meta name="language" content="Portuguese" />
 
     <title>Gastronomia dos DONUTS🍩</title>
     <link rel="icon" href="Imagens/logo.ico" />
@@ -22,19 +23,26 @@
         <!-- Logo e Título -->
         <div class="logo">
             <a class="logo" href="index.html"><img src="Imagens/logo.jpg" width="70" height="70"
-                    alt="Logo Gastronomia dos Donuts" /></a>
+                    alt="Logo Gastronomia dos Donuts"
+                    aria-label="Página inicial do evento Gastronomia dos Donuts" /></a>
         </div>
         <!-- Barra de Navegação/Menu -->
         <nav>
             <div class="navegacao">
                 <ul>
-                    <li><a class="botao_nav sem_insc" href="index.html">Página Inicial</a></li>
-                    <li><a class="botao_nav sem_insc" href="#prog_evento_nav">Programação</a></li>
-                    <li><a class="botao_nav sem_insc" href="#palestrantes">Palestrantes</a></li>
-                    <li><a class="botao_nav sem_insc" href="#local">Localização</a></li>
-                    <li><a class="botao_nav" id="inscricao_menu">Inscrição</a>
+                    <li><a class="botao_nav sem_insc" href="index.html" aria-label="Ir para a página inicial">Página
+                            Inicial</a></li>
+                    <li><a class="botao_nav sem_insc" href="#prog_evento_nav"
+                            aria-label="Ir para a seção de programação">Programação</a></li>
+                    <li><a class="botao_nav sem_insc" href="#palestrantes"
+                            aria-label="Ir para a seção de palestrantes">Palestrantes</a></li>
+                    <li><a class="botao_nav sem_insc" href="#local"
+                            aria-label="Ir para a seção de localização">Localização</a></li>
+                    <li>
+                        <a class="botao_nav" id="inscricao_menu" aria-label="Abrir submenu de inscrição">Inscrição</a>
                         <ul>
-                            <li class="preen_form"><a href="inscricao.html">Preencher Formulário</a></li>
+                            <li class="preen_form"><a href="inscricao.html"
+                                    aria-label="Preencher formulário de inscrição">Preencher Formulário</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -75,9 +83,15 @@
             </div>
             <!-- Imagens dos Donuts -->
             <div class="img_donuts">
-                <img src="Imagens/1.Página_inicial/foto1.jpg" alt="Imagem de Donuts 1" width="310" height="280" />
-                <img src="Imagens/1.Página_inicial/foto2.jpg" alt="Imagem de Donuts 2" width="310" height="280" />
-                <img src="Imagens/1.Página_inicial/foto 3.jpg" alt="Imagem de Donuts 3" width="310" height="280" />
+                <img src="Imagens/1.Página_inicial/foto1.jpg" alt="Imagem de Donuts 1"
+                    aria-label="Donut simples decorado com cobertura de chocolate e granulados coloridos" width="310"
+                    height="280" />
+                <img src="Imagens/1.Página_inicial/foto2.jpg" alt="Imagem de Donuts 2"
+                    aria-label="Donut com cobertura rosa e com glitter e confeitos coloridos" width="310"
+                    height="280" />
+                <img src="Imagens/1.Página_inicial/foto 3.jpg" alt="Imagem de Donuts 3"
+                    aria-label="Donut recheado com chocolate e com cobertura de chocolate e um morango no meio para decorar"
+                    width="310" height="280" />
             </div>
             <!-- Descrição do Evento -->
             <div class="quantidade_dias">
@@ -94,23 +108,32 @@
         <section class="dias">
             <!-- Atividades do Dia 1 -->
             <div class="dia1">
-                <h4>Dia 1 🥳</h4>
-                <a href="#d1"><img src="Imagens/1.Página_inicial/dia1.jpg" alt="Foto Dia 1" width="310"
-                        height="280" /></a>
+                <h4 aria-label="Atividades do primeiro dia do evento">Dia 1 🥳</h4>
+                <a href="#d1">
+                    <img src="Imagens/1.Página_inicial/dia1.jpg" alt="Foto Dia 1"
+                        aria-label="Imagem representando as atividades do primeiro dia do evento: explorando a tradição dos donuts"
+                        width="310" height="280" />
+                </a>
                 <p class="p_dia">Explorando a Tradição dos Donuts</p>
             </div>
             <!-- Atividades do Dia 2 -->
             <div class="dia2">
-                <h4>Dia 2 🤩</h4>
-                <a href="#d2"><img src="Imagens/1.Página_inicial/dia2.jpg" alt="Foto Dia 2" width="310"
-                        height="280" /></a>
+                <h4 aria-label="Atividades do segundo dia do evento">Dia 2 🤩</h4>
+                <a href="#d2">
+                    <img src="Imagens/1.Página_inicial/dia2.jpg" alt="Foto Dia 2"
+                        aria-label="Imagem representando as atividades do segundo dia do evento: explorando a inovação dos donuts"
+                        width="310" height="280" />
+                </a>
                 <p class="p_dia">Explorando a Inovação nos Donuts</p>
             </div>
             <!-- Atividades do Dia 3 -->
             <div class="dia3">
-                <h4>Dia 3 😋</h4>
-                <a href="#d3"><img src="Imagens/1.Página_inicial/dia3.jpg" alt="Foto Dia 3" width="310"
-                        height="280" /></a>
+                <h4 aria-label="Atividades do terceiro dia do evento">Dia 3 😋</h4>
+                <a href="#d3">
+                    <img src="Imagens/1.Página_inicial/dia3.jpg" alt="Foto Dia 3"
+                        aria-label="Imagem representando as atividades do terceiro dia do evento: donuts para todos os gostos"
+                        width="310" height="280" />
+                </a>
                 <p class="p_dia">Donuts para Todos os Gostos</p>
             </div>
         </section>
@@ -119,13 +142,14 @@
         <!-- Seção de Botão de Confirmação de Presença -->
         <section id="card_confirmar_presenca">
             <div class="card">
-                <a href="inscricao.html" target="_blank" id="botao_confirmar_presenca">Confirmar Presença</a>
+                <a href="inscricao.html" target="_blank" id="botao_confirmar_presenca"
+                    aria-label="Abrir página de inscrição para o evento">Confirmar Presença</a>
             </div>
         </section>
         <!-- Fim da Seção de Atividades por Dia -->
 
         <!-- Seção de Programação do Evento -->
-        <section id="prog_evento_nav">
+        <article id="prog_evento_nav">
             <div class="programacao_evento">
                 <div class="h1_prog_evento">
                     <h1>Programação do Evento</h1>
@@ -134,19 +158,19 @@
                 <div class="dia_1" id="d1">
                     <div class="prog_dias">
                         <h3 class="dias_prog" style="font-size:14px;font-weight: 700;">🗓️ Dia 1 - 02/12/2024 ➱</h3>
-                        <h3 style="color: #a64d79; font-size: 14px; text-align: center; padding-right: 3%" ;>Explorando
+                        <h3 style="color: #a64d79; font-size: 14px; text-align: center; padding-right: 3%";>Explorando
                             a Tradição dos Donuts</h3>
                     </div>
                     <div class="agenda_dia">
                         <h4 class="periodo">◎ Manhã:</h4>
                         <br>
                         <ol>
-                            <li>
-                                <strong>9:00 - 10:30:</strong> Registro e Boas-vindas - Café de boas-vindas com uma
+                            <li aria-label="Manhã do primeiro dia, registro e boas-vindas com café e donuts">
+                                <strong>09h00 - 10h30:</strong> Registro e Boas-vindas - Café de boas-vindas com uma
                                 seleção especial de donuts clássicos.
                             </li>
-                            <li>
-                                <strong>10:30 - 12:00:</strong> Workshop de Preparo de Massa - Aprenda com a Chef Renata
+                            <li aria-label="Manhã do primeiro dia, workshop de preparo de massa com a Chef Renata Lima">
+                                <strong>10h30 - 12h00:</strong> Workshop de Preparo de Massa - Aprenda com a Chef Renata
                                 Lima as técnicas fundamentais para preparar uma massa de donut perfeita.
                             </li>
                         </ol>
@@ -156,13 +180,16 @@
                         <h4 class="periodo">◎ Tarde:</h4>
                         <br>
                         <ol>
-                            <li>
-                                <strong>14:00 - 15:30:</strong> Demonstração de Decoração Criativa - Ana Silva
+                            <li aria-label="Tarde do primeiro dia, almoço e networking">
+                                <strong>12h00 - 14h00:</strong> Almoço e Networking - Aproveite uma pausa para almoçar e conhecer outros participantes.
+                            </li>
+                            <li aria-label="Tarde do primeiro dia, palestra sobre a história dos donuts com a Chef Ricardo Santos">
+                                <strong>14h00 - 15h30:</strong> Demonstração de Decoração Criativa - Ana Silva
                                 compartilhará suas habilidades e dicas para transformar donuts simples em obras de arte
                                 comestíveis.
                             </li>
-                            <li>
-                                <strong>15:30 - 17:00:</strong> Sessão de Degustação de Donuts Tradicionais - Explore
+                            <li aria-label="Tarde do primeiro dia, concurso de decoração de donuts">
+                                <strong>15h30 - 17h00:</strong> Sessão de Degustação de Donuts Tradicionais - Explore
                                 uma variedade de donuts clássicos de diferentes culturas e regiões.
                             </li>
                         </ol>
@@ -179,14 +206,17 @@
                         <h4 class="periodo">◎ Manhã:</h4>
                         <br>
                         <ol>
-                            <li>
-                                <strong>9:00 - 10:30:</strong> Palestra: A Evolução dos Donuts ao Longo do Tempo - Dr.
+                            <li aria-label="Manhã do segundo dia, aula prática sobre donuts gourmet">
+                                <strong>09h00 - 10h30:</strong> Palestra: A Evolução dos Donuts ao Longo do Tempo - Dr.
                                 Gustavo Almeida discute a história fascinante por trás dos donuts e sua transformação ao
                                 longo dos séculos.
                             </li>
-                            <li>
-                                <strong>10:30 - 12:00:</strong> Workshop de Donuts Criativos - Experimente criar donuts
+                            <li aria-label="Manhã do segundo dia, coffee break com degustação de donuts gourmet">
+                                <strong>10h30 - 11h30:</strong> Workshop de Donuts Criativos - Experimente criar donuts
                                 fora do comum com ingredientes inusitados e técnicas inovadoras.
+                            </li>
+                            <li aria-label="Manhã do segundo dia, workshop de recheios criativos">
+                                <strong>11h30 - 12h30:</strong> Workshop: Recheios Criativos - Explore combinações únicas para recheios com o Chef Lucas Moura.
                             </li>
                         </ol>
                         <br>
@@ -195,13 +225,16 @@
                         <h4 class="periodo">◎ Tarde:</h4>
                         <br>
                         <ol>
-                            <li>
-                                <strong>14:00 - 15:30:</strong> Competição de Donuts Criativos - Os participantes terão
+                            <li aria-label="Tarde do segundo dia, almoço livre">
+                                <strong>12h30 - 14h00:</strong> Almoço Livre - Descubra os restaurantes próximos ao local do evento.
+                            </li>
+                            <li aria-label="Tarde do segundo dia, painel sobre inovações no mercado de donuts">
+                                <strong>14h00 - 15h30:</strong> Competição de Donuts Criativos - Os participantes terão
                                 a chance de colocar em prática o que aprenderam, competindo na criação dos donuts mais
                                 criativos.
                             </li>
-                            <li>
-                                <strong>15:30 - 17:00:</strong> Sessão de Networking e Troca de Experiências - Converse
+                            <li aria-label="Tarde do segundo dia, workshop de decoração temática para donuts">
+                                <strong>15h30 - 17h00:</strong> Sessão de Networking e Troca de Experiências - Converse
                                 com os colegas donuteiros, compartilhe dicas e faça novas conexões na comunidade de
                                 amantes de donuts.
                             </li>
@@ -219,13 +252,16 @@
                         <h4 class="periodo">◎ Manhã:</h4>
                         <br>
                         <ol>
-                            <li>
-                                <strong>9:00 - 10:30:</strong> Palestra: Donuts e Saúde - Luiz Pereira explora como os
+                            <li aria-label="Manhã do terceiro dia, demonstração sobre produção em larga escala de donuts">
+                                <strong>09h00 - 10h30:</strong> Palestra: Donuts e Saúde - Luiz Pereira explora como os
                                 donuts podem ser parte de uma dieta balanceada.
                             </li>
-                            <li>
-                                <strong>10:30 - 12:00:</strong> Workshop de Donuts Veganos - Descubra receitas
+                            <li aria-label="Manhã do terceiro dia, coffee break com donuts feitos no local">
+                                <strong>10h30 - 11h30:</strong> Workshop de Donuts Veganos - Descubra receitas
                                 deliciosas e saudáveis com a Chef Marina Souza.
+                            </li>
+                            <li aria-label="Manhã do terceiro dia, palestra sobre sustentabilidade na gastronomia">
+                                <strong>11h30 - 12h30:</strong> Palestra: Sustentabilidade na Gastronomia - Estratégias para reduzir desperdícios na produção de donuts.
                             </li>
                         </ol>
                         <br>
@@ -234,18 +270,21 @@
                         <h4 class="periodo">◎ Tarde:</h4>
                         <br>
                         <ol>
-                            <li>
-                                <strong>14:00 - 15:30:</strong> Competição de Donuts Saudáveis - Mostre suas habilidades
+                            <li aria-label="Tarde do terceiro dia, almoço temático com cardápio de donuts salgados e doces">
+                                <strong>12h30 - 14h00:</strong> Almoço Temático - Experimente pratos inspirados em donuts, desde opções doces até versões salgadas.
+                            </li>
+                            <li aria-label="Tarde do terceiro dia, competição final de donuts com premiação">
+                                <strong>14h00 - 15h30:</strong> Competição de Donuts Saudáveis - Mostre suas habilidades
                                 criando donuts nutritivos e saborosos.
                             </li>
-                            <li>
-                                <strong>15:30 - 17:00:</strong> Encerramento e Premiação - Celebre os vencedores e
+                            <li aria-label="Encerramento do terceiro dia, cerimônia de encerramento e entrega de certificados">
+                                <strong>15h30 - 17h00:</strong> Encerramento e Premiação - Celebre os vencedores e
                                 desfrute de um coquetel de despedida.
                             </li>
                         </ol>
                     </div>
                 </div>
-        </section>
+        </article>
         <!-- Fim da Seção de Programação do Evento -->
 
         <!-- Seção de Palestrantes -->
