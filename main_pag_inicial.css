@@ -99,12 +99,32 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* Estilizando a seção de imagens de donuts */
-.img_donuts {
-  display: flex;
-  justify-content: space-around;
-  background-color: #ead1dc;
-  padding-right: 10%;
-  padding-left: 10%;
+
+.container-carrossel{
+  width: 1200px;
+  height: 310px;
+  background-color: #f0f4f9;
+  overflow: hidden;
+  margin: 0 16%;
+}
+
+.container-carrossel .img_donuts{
+  width: 500%;
+  animation-name: animacao;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animacao{
+  0% { margin-left: 0;}
+  20% { margin-left: 0;}
+  25% { margin-left: -100%; }
+  45% { margin-left: -100%; }
+  50% { margin-left: -200%; }
+  70% { margin-left: -200%; }
+  75% { margin-left: -300%; }
+  95% { margin-left: -300%; }
+  100% { margin-left: -400%; }
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
