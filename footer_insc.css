@@ -20,13 +20,12 @@ footer div {
   flex-direction: column;
   background-color: #250315;
   text-align: center;
-
   color: #fff;
   font-size: 12px;
   padding-top: 1%;
 }
 
-.by {
+.by direitos {
   font-family: "Playwrite GB S", cursive, sans-serif;
 }
 
@@ -37,6 +36,12 @@ footer div {
 
 #copyright{
   padding-bottom: 1%;
+}
+
+.direitos{
+  font-size: 11px;
+  font-family: "Roboto", Arial, sans-serif;
+  padding-bottom: 0.5%;
 }
 
 /* Animação para coração ficar pulsando */

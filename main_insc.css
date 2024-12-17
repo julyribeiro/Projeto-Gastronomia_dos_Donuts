@@ -152,7 +152,6 @@ form {
   padding-top: 5%;
   cursor: pointer;
   border-radius: 10px;
-  width: 70px;
 }
 
 /* Alterando a aparência do botão de envio ao passar o mouse */
@@ -161,6 +160,7 @@ form {
   background-image: url(Imagens/img_inscricao/capa_insc.jpg);
   font-weight: 500;
   background-size: cover;
+  align-items: center;
 }
 
 /* Estilizando os rótulos dos campos do formulário */
@@ -182,6 +182,32 @@ input{
   justify-content: center;
   align-items: center;
 }
+
+/* Estilo inicial do botão */
+
+.botao_animated {
+  background-color: #a36f8a;
+  color: #fff;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  padding: 10px 0px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efeito de animação quando o botão é hoverado */
+.botao_animated:hover {
+  background-color: #874c70; /* Muda a cor de fundo ao passar o mouse */
+  transform: scale(1.05); /* Amplia o botão levemente */
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*    ESTILIZANDO O DADOS PARA CONTATO    */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /*Estilizando os dados para contato*/
 .dados_para_contato {
@@ -207,7 +233,8 @@ input{
 
 /*Estilizando a cor do p da classe contato*/
 .contato{
-  color: #d48099;
+  color: #d1456f;
+  font-weight: 300;
 }
 
 

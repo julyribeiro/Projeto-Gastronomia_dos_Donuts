@@ -100,7 +100,7 @@
 
 /* Estilizando a seção de imagens de donuts */
 
-.container-carrossel{
+.container-carrossel {
   width: 1200px;
   height: 310px;
   background-color: #f0f4f9;
@@ -108,23 +108,49 @@
   margin: 0 16%;
 }
 
-.container-carrossel .img_donuts{
+.container-carrossel .img_donuts {
   width: 500%;
   animation-name: animacao;
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
 
-@keyframes animacao{
-  0% { margin-left: 0;}
-  20% { margin-left: 0;}
-  25% { margin-left: -100%; }
-  45% { margin-left: -100%; }
-  50% { margin-left: -200%; }
-  70% { margin-left: -200%; }
-  75% { margin-left: -300%; }
-  95% { margin-left: -300%; }
-  100% { margin-left: -400%; }
+@keyframes animacao {
+  0% {
+    margin-left: 0;
+  }
+
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+
+  95% {
+    margin-left: -300%;
+  }
+
+  100% {
+    margin-left: -400%;
+  }
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -191,7 +217,6 @@
   margin-bottom: 3%;
   margin-top: 3%;
   position: center;
-
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -244,8 +269,17 @@
 
 /* Estilizando o botão de confirmação de presença ao passar o mouse */
 #botao_confirmar_presenca:hover {
-  content: '';
-  background: linear-gradient(45deg, #46073b, #c596bd, #e279d1, #500a44, #e0add8, #943584, #dab5d3, #8d4b82, #eccee7);
+  content: "";
+  background: linear-gradient(45deg,
+      #46073b,
+      #c596bd,
+      #e279d1,
+      #500a44,
+      #e0add8,
+      #943584,
+      #dab5d3,
+      #8d4b82,
+      #eccee7);
   background-color: #31021a;
   color: #fff;
   opacity: 0.6;
@@ -260,7 +294,7 @@
 }
 
 #botao_confirmar_presenca:hover:active {
-  color: #000
+  color: #000;
 }
 
 #botao_confirmar_presenca:hover:after {
@@ -273,7 +307,7 @@
 
 #botao_confirmar_presenca:hover:after {
   z-index: -1;
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -282,7 +316,6 @@
   top: 0;
   border-radius: 10px;
 }
-
 
 /* Removendo o sublinhado dos links e define a cor padrão */
 a {
@@ -412,10 +445,32 @@ a:hover {
 
 .informacoes_palestrantes {
   display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas de tamanho igual */
+  gap: 20px; /* Espaço entre as colunas */
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(238, 210, 225, 1); /* Cor de fundo */
   align-items: center;
-  justify-content: space-around;
-  background-color: rgba(238, 210, 225, 1);
+  justify-content: center;
 }
+
+.palestrante img {
+  width: 100%; /* Faz a imagem ocupar a largura do container */
+  max-width: 230px; /* Define o tamanho máximo */
+  height: auto; /* Mantém a proporção */
+  border-radius: 50%; /* Deixa a imagem redonda */
+}
+
+.palestrante{
+  display: grid;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nome_palestrantes, .profissao_palestrantes h6, .p_descricao p{
+  padding: 2%;
+}
+
 
 /* Estilizando o título dos palestrantes */
 #tit_palestrantes {
@@ -450,11 +505,11 @@ a:hover {
 
 /*Estilizando as imagens e informações dos palestrantes */
 .imagens {
-  display: flex;
+  display: grid;
   justify-content: space-around;
-  flex-direction: row;
-  width: 1200px;
-  height: 500px;
+  flex-direction: column;
+  width: auto;
+  height: auto;
   flex-flow: column wrap;
   padding-left: 5%;
   margin-bottom: 0%;
@@ -491,7 +546,7 @@ a:hover {
 .p_descricao {
   text-align: justify;
   width: 230px;
-  height: 190px;
+  height: auto;
   margin: 0%;
   align-items: center;
   justify-content: space-around;
@@ -514,12 +569,19 @@ a:hover {
 /*~~~~~~~~~*/
 
 /* Centralizando o vídeo e definindo margens */
-#video {
+
+#video{
   display: flex;
   justify-content: center;
-  margin: 0 0 1% 0;
-  padding: 0 0 2% 0;
+  padding: 0% 0% 2% 0%;
   background-color: rgba(238, 210, 225, 1);
+}
+
+#video video{
+  background-color: rgba(238, 210, 225, 1);
+  padding: 2%;
+  width: 70%;  /* Reduz a largura do vídeo */
+  height: 70%; /* Mantém a proporção */
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -606,6 +668,95 @@ pre {
   color: #d48099;
 }
 
+/* Estilos para dispositivos móveis */
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    /* Reduz o tamanho da fonte para caber melhor na tela */
+    padding: 10px;
+    /* Reduz margens e espaçamentos */
+}
+
+#foto_capa{
+  height: 30vh;
+}
+
+#tit_capa{
+  font-size: 60px;
+}
+
+#data_capa{
+  font-size: 13px;
+}
+
+h2{
+  font-size: 23px;
+}
+
+.botao_nav{
+  font-size: 11px;
+  padding: 2px;
+  margin: 0;
+}
+
+.container-carrossel{
+  display: none;
+}
+
+.introducao{
+  margin: 2%;
+  padding: 3% 5%;
+}
+
+.quantidade_dias{
+  margin: 0 2% 4% 2%;
+  font-size: 20px;
+  padding: 3% 5%;
+}
+
+.dias{
+  flex-direction: column;
+}
+
+#botao_confirmar_presenca{
+  width: 60%;
+}
+
+.card{
+  margin: 0;
+  margin-bottom: 4%;
+}
+
+.dia_1, .dia_2, .dia_3{
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.informacoes_palestrantes{
+  grid-template-columns: repeat(1, 1fr); /* 2 colunas em telas menores */
+  padding: 1%;
+}
+
+.video video{
+  width: 100%;  /* Reduz a largura do vídeo */
+  height: 100%; /* Mantém a proporção */
+}
+
+.mapa{
+  flex-direction: column;
+}
+
+pre{
+  margin-top: 15px;
+}
+
+
+.by{
+  padding: 2% 0;
+}
+
+}
 
 /* --------------------------------------------------------------------------
 ~ OBSERVAÇÃO: AS FOLHAS DE ESTILO ESTÃO EM ARQUIVOS DIFERENTES, SENDO ELES: -

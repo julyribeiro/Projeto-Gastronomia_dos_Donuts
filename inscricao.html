@@ -14,60 +14,72 @@
 <body>
 
     <!-- Início da Seção do Cabeçalho -->
-    <header>
+
+    <header id="header">
+
         <!-- Logo e Título -->
-        <div class="logo">
+
+        <div class="logo" id="logo">
             <a class="logo" href="index.html"><img src="Imagens/logo.jpg" width="70" height="70"
                     alt="Logo Gastronomia dos Donuts"></a>
         </div>
+
         <!-- Barra de Navegação/Menu -->
-        <nav>
+        <nav id="nav">
             <div class="navegacao">
                 <ul>
                     <li><a class="botao_nav" href="index.html">Página Inicial</a></li>
                 </ul>
             </div>
-
         </nav>
     </header>
     <!-- Fim Barra de Navegação/Menu -->
 
     <!-- Seção Capa do Site -->
-    <section class="capa">
+
+    <section class="capa" id="capa">
+
         <div id="foto_capa">
+
             <div>
                 <h1 id="tit_capa">INSCREVA-SE</h1>
-                <h3 id="data_limite_insc">Garanta sua vaga até o dia 24/11/2024</h3>
+                <h3 id="data_limite_insc"></h3>
                 <div>
                 </div>
     </section>
+
     <!-- Fim da Seção Capa do Site -->
 
     <!-- Inicio do Conteúdo Principal -->
-    <main>
+    <main id="main_content">
 
         <!-- Título para o Formulário de Inscrição -->
-        <div class="inscricao_evento">
+        <div class="inscricao_evento" id="inscricao_evento">
+
             <h4>🍩 Explore o mundo dos DONUTS conosco! 🍩</h4>
+
         </div>
 
-        <section class="formulario">
 
-            <div class="regras_observacoes">
+
+        <section class="formulario" id="formulario">
+            <div class="regras_observacoes" id="regras_observacoes">
                 <p>Seja bem-vindo ao nosso evento de donuts, onde a paixão pela culinária se encontra com a doçura dos
                     donuts! Estamos emocionados em convidá-lo para se juntar a nós nesta jornada deliciosa e repleta de
                     sabores incríveis. Aprenda muito com os palestrantes que são renomados no ramo.</p>
+
                 <br>
+
                 <h3>Descrição:</h3>
                 <p>Neste formulário de inscrição, você terá a oportunidade de garantir seu lugar em nosso evento
                     exclusivo de donuts. Esperamos proporcionar uma experiência memorável, repleta de aprendizado,
                     diversão e, é claro, muitos donuts deliciosos!</p>
-                <br>
 
+                <br>
 
                 <h3>Regras e Observações:</h3>
                 <ol id="lista_regras">
-                    <li>🍩 inscrições são limitadas. Garanta sua vaga preenchendo este formulário o mais rápido
+                    <li>🍩 Inscrições são limitadas. Garanta sua vaga preenchendo este formulário o mais rápido
                         possível.</li>
                     <li>🍩 A participação no evento está sujeita à confirmação de inscrição por e-mail.</li>
                     <li>🍩 Respeite as regras do local do evento e as instruções dos organizadores para garantir uma
@@ -77,77 +89,100 @@
                     <li>🍩 Ao preencher este formulário, você concorda em receber informações futuras sobre eventos
                         semelhantes, a menos que opte por não participar.</li>
                 </ol>
+
                 <br>
+
                 <p>Por favor, preencha o formulário abaixo para confirmar sua participação.</p>
+
                 <br>
+
                 <p>Mal podemos esperar para compartilhar esta experiência incrível com você! 😁</p>
             </div>
 
-            <div class="form_inscricao">
-                <form>
+
+
+            <div class="form_inscricao" id="form_inscricao">
+                <form id="formulario_inscricao">
+
                     <!-- Nome do participante  -->
                     <label for="nome" class="label_form">Nome Completo:</label>
                     <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
                     <br>
+
                     <!-- E-mail do participante -->
                     <label for="email" class="label_form">Endereço de e-mail:</label>
                     <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
                     <br>
+
                     <!-- Telefone do participante -->
                     <label for="telefone" class="label_form">Número de telefone:</label>
                     <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone com DDD" required>
                     <br>
+
                     <!-- Idade do participante -->
                     <label for="idade" class="label_form">Idade:</label>
                     <input type="number" id="idade" name="idade" placeholder="Selecione sua idade" required>
                     <br>
+
                     <!-- Profissão/Ocupação do participante -->
                     <label for="profissao" class="label_form">Profissão/Ocupação:</label>
                     <input type="text" id="profissao" name="profissao" required>
                     <br>
+
                     <!-- Pergunta: Participou de evento gastronômico? -->
-                    <label class="label_form">Você já participou de algum evento gastronômico anteriormente? Se sim,
-                        qual?</label>
-                    <input type="text" id="profissao" name="profissao" required>
+                    <label for="evento_gastronomico" class="label_form">Você já participou de algum evento gastronômico anteriormente? Se sim, qual?</label>
+                    <input type="text" id="evento_gastronomico" name="evento_gastronomico" required>
                     <br>
+
                     <!-- Pergunta: Como ficou sabendo do evento?  -->
-                    <label for="como_soube" class="label_form">Como você ficou sabendo sobre o nosso evento de
-                        donuts?</label>
+                    <label for="como_soube" class="label_form">Como você ficou sabendo sobre o nosso evento de donuts?</label>
                     <input type="text" id="como_soube" name="como_soube" required>
                     <br>
+
                     <!-- Pergunta: Expectativas para o evento? -->
                     <label for="expectativas" class="label_form">Quais são suas expectativas para o evento?</label>
                     <input type="text" id="expectativas" name="expectativas" required>
                     <br>
+
                     <!-- Pergunta: Restrição alimentar? -->
                     <label for="restricao" class="label_form">Você tem alguma restrição alimentar? (Por exemplo:
                         vegetarianismo, intolerância ao glúten, alergias alimentares, etc.)</label>
                     <input type="text" id="restricao" name="restricao" required>
                     <br>
+
                     <!-- Pergunta: Alguma observação ou comentário adicional: -->
                     <label for="comentarios" class="label_form">Alguma observação ou comentário adicional:</label>
                     <textarea id="comentarios" name="comentarios"></textarea>
                     <br>
+
                     <!-- Botão Enviar -->
-                    <input type="submit" value="Concluir inscrição"
+                    <input type="submit" value="Concluir inscrição" class="botao_animated"
                         style="background-color: #a36f8a; color:#fff; margin-top: 2%; margin-bottom:3%;">
                 </form>
             </div>
         </section>
+
     </main>
 
+
+
     <!-- Seção de dados para contato -->
-    <section style="background-color: #f0f4f9";>
+
+    <section id="dados_para_contato" style="background-color: #f0f4f9" ;>
+
         <div class="dados_para_contato">
             <div>
                 <h3 class="redes_sociais" style="color:#a36f8a">Redes Sociais</h3>
-                <a href="https://www.facebook.com/?locale=pt_BR"><img src="Imagens/icone_facebook.png" alt="Facebook" width="30" height="30"/></a>
-                <a href="https://www.instagram.com"><img src="Imagens/icone_instagram.png" alt="Instagram" width="30" height="30"/></a>
-                <a href="https://x.com/?lang=pt-br"><img src="Imagens/icone_twitter.png" alt="Twitter" width="30" height="30"/></a>
+                <a href="https://www.facebook.com/?locale=pt_BR"><img src="Imagens/icone_facebook.png" alt="Facebook"
+                        width="30" height="30" /></a>
+                <a href="https://www.instagram.com"><img src="Imagens/icone_instagram.png" alt="Instagram" width="30"
+                        height="30" /></a>
+                <a href="https://x.com/?lang=pt-br"><img src="Imagens/icone_twitter.png" alt="Twitter" width="30"
+                        height="30" /></a>
             </div>
 
             <div>
-                <div class="contato">
+                <div class="contato" id="contato">
                     <h3>Contato</h3>
                     <p class="p_cont">Email: info@gastronomiadosdonuts.com</p>
                     <p class="p_cont">Telefone: (11) 1234-5678</p>
@@ -158,20 +193,22 @@
     <!-- Fim de dados para contato -->
 
     <!-- Início do Rodapé -->
-    <footer>
+    <footer id="footer">
         <div>
-            <p class="by">
-                Desenvolvido com carinho por <strong>July Ribeiro</strong>
+            <p class="by"> Desenvolvido com carinho por <strong>July Ribeiro</strong>
                 <img class="heart" src="Imagens/coracao_rosa.png" width="20px" alt="coração rosa" />
             </p>
-
             <a href="https://descodificadas.com.br/programa/" target="_blank" class="img_descodificadas">
                 <img src="Imagens/img_descodificadas.png" width="170" height="20" alt="logo descodificadas" />
             </a>
-            <p id="copyright"> © copyright - 2024</p>
+            <p class="direitos">&copy; Todos os direitos reservados - 2024.</p>
         </div>
     </footer>
     <!-- Fim do Rodapé -->
+
 </body>
+
+<!-- Arquivo Java Script -->
+<script src="script.js"></script>
 
 </html>
