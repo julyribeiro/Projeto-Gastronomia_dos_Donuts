@@ -664,9 +664,11 @@ pre {
 }
 
 /*Estilizando a cor do p da classe contato*/
-.contato {
-  color: #d48099;
+.dados_para_contato{
+  color: #d1456f;
+  font-weight: 800;
 }
+
 
 /* Estilos para dispositivos móveis */
 
