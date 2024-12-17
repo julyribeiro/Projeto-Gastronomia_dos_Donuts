@@ -73,6 +73,23 @@
   font-size: 17px;
 }
 
+/* Animação fade-in para elementos visíveis */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Aplica a animação no texto "Bem-vindo" */
+.bem_vindo {
+  animation: fadeIn 1s ease-in-out;
+}
+
 /*~~~~~~~~~~~~~~~~~~~~~~*/
 /* INTRODUÇÃO DO EVENTO */
 /*~~~~~~~~~~~~~~~~~~~~~~*/
@@ -179,6 +196,15 @@
 #donut_amatic {
   font-family: "Amatic SC", Arial, sans-serif;
   font-size: 27px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*   PROGRAMAÇÃO POR DIA   */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Tamanho da imagem para se adaptar a diferentes dispositivos */
+img{
+  max-width: 100%; height: auto;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -580,8 +606,8 @@ a:hover {
 #video video{
   background-color: rgba(238, 210, 225, 1);
   padding: 2%;
-  width: 70%;  /* Reduz a largura do vídeo */
-  height: 70%; /* Mantém a proporção */
+  width: 50%;  /* Reduz a largura do vídeo */
+  height: 50%; /* Mantém a proporção */
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -617,13 +643,14 @@ a:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 3% 15%;
+  margin: 3% 20%;
   font-weight: 700;
   font-size: 13px;
 }
 
 pre {
   font-family: "Roboto", Arial, sans-serif;
+  
 }
 
 /* Estilizando a seção de reforço para convite */
@@ -664,29 +691,38 @@ pre {
 }
 
 /*Estilizando a cor do p da classe contato*/
-.contato {
-  color: #d48099;
+.dados_para_contato{
+  color: #d1456f;
+  font-weight: 200;
 }
 
-/* Estilos para dispositivos móveis */
 
-@media (max-width: 768px) {
+/* Estilos para dispositivos móveis */
+@media (max-width: 748px) {
   body {
     font-size: 14px;
     /* Reduz o tamanho da fonte para caber melhor na tela */
-    padding: 10px;
-    /* Reduz margens e espaçamentos */
 }
 
-#foto_capa{
-  height: 30vh;
+header{
+  max-width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
-#tit_capa{
-  font-size: 60px;
+#foto_capa {
+  height: 38vh;
 }
 
-#data_capa{
+#tit_capa {
+  padding-top:18%;
+  font-size: 50px;
+}
+
+#data_capa {
   font-size: 13px;
 }
 
@@ -694,68 +730,117 @@ h2{
   font-size: 23px;
 }
 
-.botao_nav{
-  font-size: 11px;
+.botao_nav {
+  font-size: 8px;
   padding: 2px;
   margin: 0;
 }
 
-.container-carrossel{
+.bem_vindo h2{
+  font-size: 18px;
+  padding: 3%;
+}
+
+.container-carrossel {
   display: none;
 }
 
-.introducao{
+.introducao {
   margin: 2%;
   padding: 3% 5%;
 }
 
-.quantidade_dias{
+.quantidade_dias {
   margin: 0 2% 4% 2%;
   font-size: 20px;
   padding: 3% 5%;
 }
 
-.dias{
+.quantidade_dias p{
+  font-size: 17px;
+}
+
+.dias {
   flex-direction: column;
 }
 
-#botao_confirmar_presenca{
+#botao_confirmar_presenca {
   width: 60%;
 }
 
-.card{
+.card {
   margin: 0;
   margin-bottom: 4%;
 }
 
-.dia_1, .dia_2, .dia_3{
+.programacao_evento{
+  display: grid;
+  grid-template-columns: 1;
+  max-width: 100%;
+}
+
+.dia_1, .dia_2, .dia_3 {
   margin: 10px;
   margin-bottom: 20px;
 }
 
-.informacoes_palestrantes{
+#desc_palestrantes h3{
+  font-size: 14px;
+}
+
+.informacoes_palestrantes {
   grid-template-columns: repeat(1, 1fr); /* 2 colunas em telas menores */
   padding: 1%;
 }
 
-.video video{
+.video video {
   width: 100%;  /* Reduz a largura do vídeo */
   height: 100%; /* Mantém a proporção */
 }
 
-.mapa{
-  flex-direction: column;
+#descubra_paraiso{
+  font-size: 16px;
+  text-align: justify;
 }
 
-pre{
-  margin-top: 15px;
-}
-
-
-.by{
+#descubra_paraiso p{
   padding: 2% 0;
 }
 
+#veja_local{
+  text-align: center;
+}
+
+.mapa {
+  flex-direction: column;
+  margin: 5% 20%;
+}
+
+pre {
+  margin-top: 15px;
+}
+
+.p_cont{
+  font-size: 8px;
+}
+
+.ref_convite p{
+  font-size: 30px;
+}
+
+.dados_para_contato{
+  margin: 3%;
+  font-size: 11.5px;
+  font-style: bold;
+}
+
+.contato{
+  font-weight: 400;
+}
+
+.by {
+  padding: 2% 0;
+}
 }
 
 /* --------------------------------------------------------------------------

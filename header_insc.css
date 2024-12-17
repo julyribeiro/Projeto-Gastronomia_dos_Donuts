@@ -2,6 +2,7 @@
 /*                    IMPORTS (FONTES)                       */
 /* --------------------------------------------------------- */
 
+/* Importação de fontes do Google Fonts para utilizar no design do site */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
@@ -10,89 +11,87 @@
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*   FORMATAÇÃO HEADER (CABEÇALHO)   */
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* Resetando margens, padding e configurando box-sizing */
+/* Resetando margens e padding de todos os elementos e configurando box-sizing */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  font-family: "Roboto", sans-serif;
+  box-sizing: border-box; /* Inclui o padding e borda no cálculo de largura e altura */
+  overflow-x: hidden; /* Evita o overflow horizontal */
+  font-family: "Roboto", sans-serif; /* Definindo fonte padrão */
 }
 
-/* Definindo cor de fundo do body */
+/* Definindo cor de fundo do corpo da página */
 body {
-  background-color: #eed2e1;
+  background-color: #eed2e1; /* Cor de fundo clara para a página */
 }
 
-/* Estilizando a logo */
+/* Estilizando a logo no cabeçalho */
 .logo {
-  margin-top: 3px;
-  margin-bottom: 1px;
-  padding-left: 5px;
+  margin-top: 3px; /* Pequeno espaço superior */
+  margin-bottom: 1px; /* Pequeno espaço inferior */
+  padding-left: 5px; /* Pequeno padding à esquerda */
 }
 
-/* Estilizando para o header */
+/* Estilo para o cabeçalho (header) */
 header {
-  background-color: #250315;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0px;
-  padding: 0;
+  background-color: #250315; /* Cor de fundo escura para o cabeçalho */
+  color: #fff; /* Texto branco */
+  display: flex; /* Usando flexbox para o layout */
+  justify-content: space-between; /* Espaçamento entre os itens do cabeçalho */
+  align-items: center; /* Alinha os itens verticalmente */
+  margin-bottom: 0px; /* Remover margem inferior */
+  padding: 0; /* Remover padding */
 }
 
-/* Definindo display flex para ul do nav e Removendo estilo de lista dos ul do menu de navegação*/
+/* Estilo para o menu de navegação (nav) */
 nav ul {
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-    list-style: none;
+  display: flex; /* Layout flexível para os itens do menu */
+  align-items: center; /* Alinha os itens centralizados verticalmente */
+  list-style-type: none; /* Remove a numeração ou marcadores da lista */
 }
 
-/* Estilizando os itens de lista dentro do nav */
+/* Estilizando os itens de lista dentro do menu de navegação */
 nav li {
-  display: inline-block;
-  margin-left: 20px;
+  display: inline-block; /* Itens dispostos em linha */
+  margin-left: 20px; /* Espaçamento entre os itens do menu */
 }
 
-/* Estilizando todos os li do nav */
+/* Estilo geral para os itens de lista dentro do nav */
 li {
-  text-align: -webkit-match-parent;
-  unicode-bidi: isolate;
+  text-align: -webkit-match-parent; /* Alinhamento de texto para navegadores baseados em Webkit */
+  unicode-bidi: isolate; /* Evita problemas de direção de texto */
 }
 
-/* Estilizando os links de navegação */
+/* Estilo para os links do menu de navegação */
 nav a {
-  background-color: transparent;
-  color: #fff;
-  text-decoration: none;
-  border: none;
-  font-size: 16px;
-  font-style: normal;
-  margin-right: 15px;
+  background-color: transparent; /* Sem fundo para os links */
+  color: #fff; /* Cor do texto dos links */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  border: none; /* Remove a borda */
+  font-size: 16px; /* Tamanho da fonte dos links */
+  font-style: normal; /* Define o estilo da fonte como normal */
+  margin-right: 15px; /* Espaço à direita de cada link */
 }
 
-/* Estilizando o hover dos itens de lista */
+/* Efeito hover para os itens de lista (escurece ao passar o mouse) */
 li:hover {
-  opacity: 0.6;
+  opacity: 0.6; /* Reduz a opacidade para dar um efeito visual */
 }
 
-/* Ajuste da margem e padding para header e li dos botões de nav*/
+/* Ajustes de margem e padding para header e itens do menu de navegação */
 header,
 li {
-  margin-top: 0;
-  padding-right: 8px;
+  margin-top: 0; /* Remove a margem superior */
+  padding-right: 8px; /* Adiciona padding à direita dos itens */
 }
 
-/* Estilizando os botões de navegação */
+/* Estilo para os botões de navegação */
 .botao_nav {
-  font-size: 13px;
-  text-align: center;
+  font-size: 13px; /* Tamanho da fonte dos botões */
+  text-align: center; /* Centraliza o texto dentro dos botões */
 }
-
 
 /* --------------------------------------------------------------------------
 ~ OBSERVAÇÃO: AS FOLHAS DE ESTILO ESTÃO EM ARQUIVOS DIFERENTES, SENDO ELES: -

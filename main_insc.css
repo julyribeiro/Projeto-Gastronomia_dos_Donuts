@@ -144,6 +144,8 @@ form {
 /* Definindo a altura do campo textarea */
 .form_inscricao textarea {
   height: 70px;
+  margin-top: 1%;
+  margin-bottom: 7%;
 }
 
 /* Estilizando o botão de envio do formulário */
@@ -151,7 +153,7 @@ form {
   color: white;
   padding-top: 5%;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 /* Alterando a aparência do botão de envio ao passar o mouse */
@@ -169,6 +171,7 @@ form label {
   font-weight: 350;
   color: #000;
   padding-top: 2%;
+  padding-bottom: 2%;
   text-align: left;
 }
 
@@ -189,10 +192,10 @@ input{
   background-color: #a36f8a;
   color: #fff;
   margin-top: 2%;
-  margin-bottom: 3%;
+  margin-bottom: 2%;
   padding: 10px 0px;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
@@ -217,7 +220,7 @@ input{
   align-items: center;
   margin-top: 2%;
   margin-bottom: 1%;
-  padding-bottom: 0%;
+  padding-bottom: 2%;
   color: rgb(41, 40, 40);
   font-size: 14px;
   text-align: center;
@@ -232,11 +235,57 @@ input{
 }
 
 /*Estilizando a cor do p da classe contato*/
-.contato{
+.dados_para_contato{
   color: #d1456f;
-  font-weight: 300;
+  font-weight: 400;
 }
 
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Reduz o tamanho da fonte para caber melhor na tela */
+
+}
+
+#foto_capa {
+  height: 30vh;
+}
+
+
+#tit_capa{
+  font-size: 50px;
+}
+
+#tit_capa h1{
+  padding-top: 5%;
+}
+
+#data_limite_insc{
+  font-size: 15px;
+}
+
+.inscricao_evento h4{
+  font-size: 17px;
+}
+
+#formulario_inscricao{
+  padding: 7% 5%;
+  margin: 0 3%;
+  margin-bottom: 3%;
+  border-radius: 50px;
+}
+
+.dados_para_contato{
+  margin: 3%;
+  font-size: 11.5px;
+  font-style: bold;
+}
+
+.contato{
+  font-weight: 400;
+}
+
+
+}
 
 
 /* --------------------------------------------------------------------------

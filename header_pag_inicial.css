@@ -2,6 +2,7 @@
 /*                    IMPORTS (FONTES)                       */
 /* --------------------------------------------------------- */
 
+/* Importação de fontes do Google Fonts para utilização no design do site */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
@@ -10,139 +11,145 @@
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*   FORMATAÇÃO HEADER (CABEÇALHO)   */
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* Resetando margens, padding e configurando box-sizing */
+/* Reset de margens e padding para todos os elementos, e configuração de box-sizing */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Inclui padding e border no tamanho total do elemento */
 }
 
-/* Definindo cor de fundo do body */
+/* Definindo a cor de fundo do corpo da página */
 body {
-  background-color: #f0f4f9;
+  background-color: #f0f4f9; /* Cor clara para o fundo da página */
 }
 
-/* Estilizando a logo */
+/* Estilo para a logo do cabeçalho */
 .logo {
   margin-top: 3px;
   margin-bottom: 1px;
-  padding-left: 5px;
+  padding-left: 5px; /* Ajuste da posição da logo */
 }
 
-/* Estilizando o header */
+/* Estilo geral para o cabeçalho (header) */
 header {
-  background-color: #250315;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #250315; /* Cor de fundo escura para o cabeçalho */
+  color: #fff; /* Texto branco no cabeçalho */
+  display: flex; /* Flexbox para alinhamento */
+  justify-content: space-between; /* Espaço entre os itens do cabeçalho */
+  align-items: center; /* Alinha os itens centralizados verticalmente */
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif; /* Definindo fonte para o cabeçalho */
 }
 
-/* Removendo estilo de lista da programação do evento*/
-ol{
-list-style: none;
+/* Removendo estilo padrão das listas ordenadas (programação do evento) */
+ol {
+  list-style: none; /* Remove marcadores */
 }
 
-/* Estilizando o menu de navegação, removendo estilo de lista */
+/* Estilo do menu de navegação */
 nav ul {
-  list-style-type: none;
+  list-style-type: none; /* Remove os marcadores de lista */
 }
 
-/* Configurando display flex para alinhamento dos itens do menu */
+/* Definindo layout flex para o menu de navegação */
 ul {
-  display: flex;
-  align-items: center;
+  display: flex; /* Itens alinhados em linha */
+  align-items: center; /* Alinha os itens verticalmente */
 }
 
-/* Estilizando os itens da lista no menu */
+/* Estilo para os itens do menu de navegação */
 nav li {
-  display: inline;
-  position: relative;
-  margin-left: 20px;
+  display: inline; /* Exibe os itens em linha */
+  position: relative; /* Necessário para o submenu */
+  margin-left: 20px; /* Espaçamento entre os itens do menu */
 }
 
-/* Estilo geral para todos os links de navegação */
+/* Estilo geral para os links do menu de navegação */
 nav a {
-  display: inline-block;
-  background-color: transparent;
-  color: #fff; 
-  text-decoration: none; 
-  border: none; 
-  font-size: 16px; 
+  display: inline-block; /* Os links são exibidos como blocos em linha */
+  background-color: transparent; /* Sem fundo nos links */
+  color: #fff; /* Cor do texto branco */
+  text-decoration: none; /* Remove o sublinhado */
+  border: none; /* Remove bordas */
+  font-size: 16px; /* Tamanho da fonte */
 }
 
-/* Estilizando o hover nos itens do menu */
+/* Efeito hover para os itens de navegação */
 .sem_insc:hover {
-  border-bottom: 2px solid rgb(230, 137, 186);
+  border-bottom: 2px solid rgb(230, 137, 186); /* Linha embaixo do item ao passar o mouse */
   padding: 0;
   margin: auto;
 }
 
-/* Ajuste da margem e padding para o header e li dos botões de navegação */
+/* Ajuste de margens e padding para o header e itens do menu de navegação */
 header,
 li {
   margin-top: 0;
-  padding-right: 8px;
+  padding-right: 8px; /* Ajuste do padding */
 }
 
-/* Estilizando botões de navegação */
+/* Estilo para os botões de navegação */
 .botao_nav {
-  font-family: "Roboto", sans-serif;
-  font-size: 13px;
-  text-align: center;
+  font-family: "Roboto", sans-serif; /* Definindo fonte */
+  font-size: 13px; /* Tamanho da fonte */
+  text-align: center; /* Centraliza o texto nos botões */
 }
 
-/* Ajuste de padding para o botão de inscrição */
+/* Ajuste do padding do botão de inscrição no menu */
 #inscricao_menu {
-  padding-right: 30px;
+  padding-right: 30px; /* Aumenta o padding direito do botão */
 }
 
-/* Cor de hover para o botão de inscrição */
+/* Efeito hover no botão de inscrição */
 nav ul li #inscricao_menu:hover {
-  color: #fff;
+  color: #fff; /* Muda a cor do texto para branco ao passar o mouse */
 }
 
 /*-----------------------*/
 /* SUB MENU (DROPDOWN)   */
-/*-----------------------*/
+/*----------------------- */
 
-/* Estilizando submenu (inicialmente oculto) */
+/* Estilizando o submenu (inicialmente oculto) */
 nav ul ul {
-  display: none;           /* Oculta o submenu */
+  display: none; /* Submenu oculto por padrão */
   margin: 0;
   padding: 0;
-  left: 0;
-  position: absolute;
+  left: 0; /* Posicionamento à esquerda */
+  position: absolute; /* Submenu flutuando acima do menu principal */
 }
 
-/* Exibe o submenu ao passar o mouse sobre o item Inscrição */
+/* Exibindo o submenu quando o item pai é focado */
 nav ul li:hover ul {
-  display: block;
-  top: 3px;
+  display: block; /* Exibe o submenu ao passar o mouse */
+  top: 3px; /* Ajuste de posição do submenu */
 }
 
-/* Estilo para links do submenu */
+/* Estilo para os links dentro do submenu */
 nav ul ul li a {
-  display: block;
-  background-color: rgb(230, 137, 186);
-  border-radius: 3px;
-  font-weight: 400;
-  color: #fff;
-  padding: 0px;
-  font-size: 12.5px;
-  text-align: center;
-  margin: 0;
+  display: block; /* Links ocupando toda a largura do submenu */
+  background-color: rgb(230, 137, 186); /* Cor de fundo do submenu */
+  border-radius: 3px; /* Bordas arredondadas */
+  font-weight: 400; /* Peso da fonte normal */
+  color: #fff; /* Cor do texto */
+  padding: 0px; /* Sem padding extra */
+  font-size: 12.5px; /* Tamanho da fonte */
+  text-align: center; /* Texto centralizado */
+  margin: 0; /* Remove margens */
 }
 
+/* Efeito hover para os links do submenu */
 nav ul ul li a:hover {
-  color: #250315;
+  color: #250315; /* Cor do texto ao passar o mouse */
 }
 
-
+/* Ajustes de tamanho para botões em telas pequenas */
+@media (max-width: 768px) {
+  .botao_nav {
+    font-size: 9px; /* Diminui o tamanho da fonte em telas pequenas */
+  }
+}
 
 /* --------------------------------------------------------------------------
 ~ OBSERVAÇÃO: AS FOLHAS DE ESTILO ESTÃO EM ARQUIVOS DIFERENTES, SENDO ELES: -
