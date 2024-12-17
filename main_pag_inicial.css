@@ -693,9 +693,11 @@ pre {
 /*Estilizando a cor do p da classe contato*/
 .dados_para_contato{
   color: #d1456f;
-  font-weight: 200;
+  font-weight: 400;
 }
 
+
+/* Estilos para dispositivos móveis */
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 748px) {
@@ -831,7 +833,6 @@ pre {
 .dados_para_contato{
   margin: 3%;
   font-size: 11.5px;
-  font-style: bold;
 }
 
 .contato{
